@@ -1,0 +1,18 @@
+---
+title: "Developing Data Product Project 1"
+author: "Rogerli"
+date: "7/12/2020"
+output: html_document
+---
+## Map Assignment
+This is the assignment by the developing data product class on coursera. I use the map which contains my apartment. 
+
+```{r leaflet}
+library(leaflet)
+my_map <- leaflet() %>%
+  addTiles() %>%
+  addMarkers(lat=42.368956, lng=-71.246971, popup="My Apartment")
+my_map
+```
+
+
